@@ -20,6 +20,7 @@ export async function getProject(slug: string): Promise<Project | null> {
     projectId: '1bhoetgx',
     dataset: 'production',
     apiVersion: '2025-08-04',
+    useCdn: false, // Set to false to ensure fresh data
   });
 
   return client.fetch(
