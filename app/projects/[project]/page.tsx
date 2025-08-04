@@ -2,14 +2,12 @@ import { getProject } from '@/sanity/schemas/sanity-utils';
 import { PortableText } from '@portabletext/react';
 import Image from 'next/image';
 
-type Props = {
-  params: Promise<{
-    project: string;
+type Props = Promise<{
+    slug: string;
   }>;
-};
 
-export default async function Project({ params }: Props) {
-  const { project: slug } = await params;
+export default async function Project({ params }: {params : Props}) {
+  const { slug } = await params;
   const project = await getProject(slug);
 
   return (

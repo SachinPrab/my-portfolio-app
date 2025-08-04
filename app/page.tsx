@@ -1,7 +1,6 @@
 import { getProjects } from "@/sanity/schemas/sanity-utils";
 import Image from "next/image";
 import Link from "next/link";
-
 export default async function Home() {
   const projects = await getProjects();
 
@@ -49,6 +48,7 @@ export default async function Home() {
           </Link>
         ))}
       </div>
+      <footer></footer>
     </div>
   );
 }
