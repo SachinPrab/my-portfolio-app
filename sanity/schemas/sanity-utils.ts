@@ -15,23 +15,23 @@ return createClient(clientConfig).fetch(
     }`
 );
 }
-export async function getProject(slug: string): Promise<Project | null> { 
+export async function getProject(slug: string): Promise<Project | null> {
   const client = createClient({
-projectId: '1bhoetgx',
-dataset: 'production',
-apiVersion: '2025-08-04',
+    projectId: '1bhoetgx',
+    dataset: 'production',
+    apiVersion: '2025-08-04',
+  });
 
-    });
-return createClient(clientConfig).fetch(
+  return client.fetch(
     groq`*[_type == "project" && slug.current == $slug][0]{
-    _id,
-    _createdAt,
-    name,
-    "slug": slug.current,
-    "image": image.asset->url,
-    url,
-    content
-    }`
-, { slug }
-);
+      _id,
+      _createdAt,
+      name,
+      "slug": slug.current,
+      "image": image.asset->url,
+      url,
+      content
+    }`,
+    { slug }
+  );
 }
