@@ -3,13 +3,12 @@ import { PortableText } from "@portabletext/react";
 import Image from "next/image";
 
 type Props = {
-  params: { project: string }; // ✅ Correct type
+  params: 
+    Promise<{project: string}>;
 };
-
-export const dynamicParams = true;
-
+export const dynamicParams = true; // Enable dynamic params for this page
 export default async function Project({ params }: Props) {
-  const slug = params.project;
+  const slug = (await params).project;
 
   // Basic null check
   if (!slug) {
