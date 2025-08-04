@@ -2,15 +2,16 @@ import { getProject } from "@/sanity/schemas/sanity-utils";
 import { PortableText } from "@portabletext/react";
 import Image from "next/image";
 
+// ✅ Params must be a Promise in Next.js 15
 type Props = {
-  params: 
-    Promise<{project: string}>;
+  params: Promise<{ project: string }>;
 };
-export const dynamicParams = true; // Enable dynamic params for this page
+
+export const dynamicParams = true;
+
 export default async function Project({ params }: Props) {
-    const awaitedParams = await params; // Await the params Promise
-  const slug = awaitedParams.project;
-  // Basic null check
+  const { project: slug } = await params;
+
   if (!slug) {
     throw new Error("Slug param is missing.");
   }
