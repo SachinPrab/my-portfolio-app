@@ -8,8 +8,8 @@ type Props = {
 };
 export const dynamicParams = true; // Enable dynamic params for this page
 export default async function Project({ params }: Props) {
-  const slug = (await params).project;
-
+    const awaitedParams = await params; // Await the params Promise
+  const slug = awaitedParams.project;
   // Basic null check
   if (!slug) {
     throw new Error("Slug param is missing.");
