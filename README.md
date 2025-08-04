@@ -80,10 +80,6 @@ images: {
 - `npm run lint` — Lint code
 - `npm run tailwind:init` — Initialize Tailwind config
 
-## 📝 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
 ---
 
-**Made with ❤️ by
+**Made with ❤️ by Sachin Prabhakar
