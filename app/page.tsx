@@ -10,9 +10,9 @@ export default async function Home() {
     <>
       <Navbar />
       <div className="px-4 -mt-20 sm:px-6 lg:px-5 py-10 max-w-screen-xl mx-auto">
-        <h1 className="text-4xl sm:text-5xl leading-relaxed md:text-6xl lg:text-7xl font-extrabold text-gray-900 dark:text-white">
+        <h1 className="text-4xl sm:text-5xl leading-relaxed md:text-6xl lg:text-7xl font-extrabold text-gray-900 dark:text-black">
           Hello! I&apos;m <br />
-          <span className="block mt-1 bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent">
+          <span className="block mt-0 bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent">
             Sachin Prabhakar
           </span>
         </h1>
