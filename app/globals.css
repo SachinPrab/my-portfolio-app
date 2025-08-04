@@ -11,7 +11,10 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
-
+html {
+  background-color: #111827;
+  color: white;
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --background: white;
