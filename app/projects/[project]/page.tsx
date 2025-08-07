@@ -44,7 +44,7 @@ export default async function Project({ params }: Props) {
         </a>
       </header>
 
-      <div className="flex flex-col items-center justify-center text-center mt-4 text-lg text-gray-700 mb-10">
+      <div className="flex flex-col items-center dark:text-white justify-center text-center mt-4 text-lg text-gray-700 mb-10">
         {project.content ? (
           <PortableText value={project.content} />
         ) : (

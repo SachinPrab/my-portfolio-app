@@ -1,6 +1,7 @@
 "use client";
 
 import { Github, Linkedin } from "lucide-react";
+import { ModeToggle } from "./ModeToggle";
 
 export default function Navbar() {
   return (
@@ -28,6 +29,7 @@ export default function Navbar() {
         >
           <Linkedin className="w-5 h-5 text-white" />
         </a>
+        <div className="hover:bg-white/40 transition"><ModeToggle/></div>
       </div>
     </nav>
   );
