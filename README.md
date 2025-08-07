@@ -1,7 +1,7 @@
 # Sachin Prabhakar's Portfolio
 
 Welcome to my personal portfolio site!  
-This project is built with [Next.js](https://nextjs.org/) (App Router), [Sanity.io](https://www.sanity.io/) for content management, and [Tailwind CSS](https://tailwindcss.com/) for styling.
+This project is built with [Next.js](https://nextjs.org/) (App Router), [Sanity.io](https://www.sanity.io/) for content management,[ShadcnUI](https://ui.shadcn.com/docs/) for components and carousel and [Tailwind CSS](https://tailwindcss.com/) for styling.
 
 ## 🚀 Features
 
@@ -10,26 +10,10 @@ This project is built with [Next.js](https://nextjs.org/) (App Router), [Sanity.
 - **Sanity Studio:** Embedded admin panel for content management at `/admin`.
 - **Optimized Images:** Uses Next.js Image component for fast, responsive images.
 - **Modern Stack:** Next.js 15, React 19, Tailwind CSS 4, TypeScript.
+- **Clean layout:** with light/dark mode support (if you added one)
+- **About Me section:** with personal background and goals
 
-## 🗂️ Project Structure
 
-```
-app/
-  layout.tsx           # Global layout
-  page.tsx             # Homepage
-  globals.css          # Global styles (Tailwind)
-  projects/
-    [project]/
-      page.tsx         # Dynamic project details
-  admin/
-    [[...index]]/
-      page.tsx         # Embedded Sanity Studio
-sanity/
-  schemas/
-    sanity-utils.ts    # Sanity utility functions
-next.config.js         # Next.js config (image domains, etc.)
-tailwind.config.js     # Tailwind config
-```
 
 ## 🛠️ Getting Started
 
@@ -55,6 +39,15 @@ tailwind.config.js     # Tailwind config
 5. **Access the site:**
    - Portfolio: [http://localhost:3000](http://localhost:3000)
    - Admin Studio: [http://localhost:3000/admin](http://localhost:3000/admin)
+
+## 🛠️ Tech Stack
+
+- **Next.js 14 App Router**
+- **React**
+- **TypeScript**
+- **Tailwind CSS**
+- **Sanity.io** for CMS
+- **ShadCN UI** for UI components
 
 ## 🖼️ Image Optimization
 
